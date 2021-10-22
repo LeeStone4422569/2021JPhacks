@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -10,17 +9,18 @@ html {
 }
 
 body {
-    height: 100%;
+    position: fixed;/* 変更した */
+    top: 0;/* 変更した */
+    height: 100vh;
     width: 100%;
 }
 
 .btn {
-    
     display: inline-block;
     border-radius: 30px 30px 30px 30px;
     width: 60px;
     height: 60px;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     background-color: rgba(255, 187, 0, 0.534);
@@ -32,7 +32,7 @@ body {
     border-radius: 30px 30px 30px 30px;
     width: 60px;
     height: 60px;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     background-color: rgba(172, 131, 19, 0.5);
@@ -79,41 +79,37 @@ form {
 input {
     width: 250px;
     height: 60px;
+    font-size: 20px;/* 変更した */
     margin-bottom: 10px;
-    background-color: rgb(90, 80, 86);
-}
-
-input:focus {
-    width: 250px;
-    height: 60px;
-    margin-bottom: 10px;
-    background-color: rgba(250, 250, 250, 0.95);   
+    background-color: #ddd;
 }
 
 button {
+    height: 30px;/* 変更した */
+    width: 50px;/* 変更した */
     padding: 3px 5px 3px 5px;
     display: block;
     margin: 0 auto;
+
 }
 
 .top {
     width: 100%;
-    height: 50px;
+    height: 6vh;/* 変更した */
     background-color: firebrick;
     border-radius: 10px 10px 10px 10px;
 }
 
 .box {
     width: 90%;
-    height: 200px;
+    height: 40vh;/* 変更した */
     background: linear-gradient(darkred 0% 1%, firebrick 25% 75%, darkred 99% 100%);
     border-radius: 0 0 10px 10px;
     margin: 0 auto;
 }
-
 .foot {
-    width: 40px;
-    height: 270px;
+    width: 20vw;/* 変更した */
+    height: 36vh;/* 変更した */
     background: linear-gradient(to right, #333333 0% 10%, #666666 35% 65%, #333333 90% 100%);
     margin: 0 auto;
 }
@@ -121,7 +117,7 @@ button {
 .post {
     width: 100%;
     height: 100%;
-    margin-top: 150px;
+    margin-top: 18vh;/* 変更した */
     position: relative;
     z-index: -1;
 }
